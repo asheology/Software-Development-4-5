@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label{
+            font-size: large;
+        }
+        button{
+            font-size: larger;
+            margin: 25px;
+            padding: 10px;
+            
+        }
+        .div_buttons{
+            width: 25%;
+            align-items: center;
+        }
+        body{
+            width: 50%;
+            background-color: rgba(183, 243, 241, 0.708);
+        }
+        input{
+            width: 300px;
+        }
+        h2{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>Datos Personales</h2>
+    <form action="#" method="POST">
+   
+        <label class="nombre">Nombre:</label>
+        <input type="text"><br><br>
+
+  
+        <label>Apellido:</label>
+        <input type="text"><br><br>
+
+   
+        <label>Cédula:</label>
+        <input type="text"><br><br>
+
+        <label>Sexo:</label>
+        <select id="sexo" name="sexo" required>
+            <option value="masculino">Masculino</option>
+            <option value="femenino">Femenino</option>
+        </select><br><br>
+
+
+        <label>Fecha de Nacimiento:</label>
+        <input type="date"><br><br>
+
+
+        <fieldset><br><br>
+
+        <label>Lugar de Nacimiento:</label>
+        <input type="text"><br><br>
+
+ 
+        <label>Provincia:</label>
+        <select>
+            <option value="Bocas_del_toro">Bocas del Toro</option>
+            <option value="Cocle">Coclé</option>
+            <option value="Colon">Colón</option>
+            <option value="Chiriqui">Chiriquí</option>
+            <option value="Darien">Darién</option>
+            <option value="Herrera">Herrera</option>
+            <option value="Los_Santos">Los Santos</option>
+            <option value="Panama">Panamá</option>
+            <option value="Panama_Este">Panamá Este</option>
+            <option value="Panama_Oeste">Panamá Oeste</option>
+            <option value="Veraguas">Veraguas</option>
+            <option value="Ngabe_Bugle">Ngäbe-Buglé</option>
+            <option value="Guna_Yala">Guna Yala</option>
+            <option value="Embera_Wounaan">Emberá-Wounaan</option>
+        </select><br><br>
+
+        <label>Distrito:</label>
+        <input type="text"><br><br>
+
+        <label>Corregimiento:</label>
+        <input type="text"><br><br>
+
+        </fieldset><br><br>
+
+
+        <div class="div_buttons"><button type="submit">Enviar</button>
+            <button type="reset">Borrar datos Formulario</button></div>
+        
+    </form>
+</body>
+</html>
