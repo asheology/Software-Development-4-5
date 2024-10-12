@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 2 Omar Garcia Menu Materias</title>
+    <style>
+
+        
+        body{
+            background-color: #EFB0A1;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+        }
+        h1{
+            padding: 10px;
+            text-align: center;
+            margin: 0;
+            
+        }
+        .header {
+            width: 100%;
+            height: 100px;
+            background-color: #adbcca;
+            margin-bottom: 20px;
+            border-bottom: #000 solid 3px;
+        }
+        .principal{
+            display: flex;
+            flex-direction: column;
+	        align-items: center; 
+        }
+        .menu{
+            text-align: center;
+
+            height: 300px;
+            width: 400px;
+            background-color: #F4AFB4;
+            border-radius: 10px;
+            border: #000 3px solid;
+            margin-bottom: 20px;
+        }
+        .menu button{
+            width: 200px;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            border: solid 2px #000;
+            background-color: #98baa2;
+            
+        }
+        .materias{
+            display: flex;
+            flex-direction: column;
+	        align-items: center; 
+        }
+        .default {
+            display: none; /* Hatributo que oculta el contenido */
+        }
+
+        .active {
+            display: block; /* atributo que muestra el contenido*/
+            width: 60vw;
+            height: auto;
+            background-color: #C9B7AD;
+            border-radius: 10px;
+            border: #000 3px solid;
+            margin: 30px;
+            
+        }
+        ul{
+            list-style: none;
+           
+        }
+        li{
+            font-weight: bold;
+        }
+        h2{
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <h1>Laboratorio 2 Software 5 <br> Omar Garcia</h1>
+        </div>
+    </header>
+    <section class="principal">
+        <div class="menu">
+            <h2>Menu</h2>
+            <button onclick="showSection('primaria')">Mostrar Materias Primaria</button>
+            <button onclick="showSection('secundaria')">Mostrar Materias Secundaria</button>
+            <button onclick="showSection('universidad')">Mostrar Materias Universidad</button>
+        </div>
+    </section>
+    
+
+    <section class="materias">
+       
+        <div id="primaria" class="default">
+            <h2>Materias de Primaria</h2>
+            <ul>
+                <li>Matemáticas</li>
+                <p>Conceptos básicos de números y operaciones.</p>
+    
+                <li>Español</li>
+                <p>Lectura y escritura de palabras y oraciones simples.</p>
+    
+                <li>Ciencias Sociales</li>
+                <p>Conocimiento de la comunidad y cultura.</p>
+    
+                <li>Ciencias Naturales</li>
+                <p>Estudio básico de plantas y animales.</p>
+    
+                <li>Educación Física</li>
+                <p>Actividades deportivas y desarrollo físico.</p>
+    
+                <li>Religión</li>
+                <p>Aprendizaje de valores y principios religiosos.</p>
+            </ul>
+        </div>
+    
+       
+        <div id="secundaria" class="default">
+            <h2>Materias de Pre Media</h2>
+            <ul>
+                <li>Matemáticas</li>
+                <p>Estudio del álgebra y ecuaciones.</p>
+    
+                <li>Español</li>
+                <p>Análisis de textos más complejos.</p>
+    
+                <li>Cívica</li>
+                <p>Conocimiento de derechos y deberes ciudadanos.</p>
+    
+                <li>Educación Física</li>
+                <p>Desarrollo físico y deportes variados (futbol).</p>
+    
+                <li>Inglés</li>
+                <p>Aprendizaje de vocabulario y gramática.</p>
+    
+                <li>Geografía</li>
+                <p>Estudio de mapas y regiones del mundo.</p>
+               
+
+            </ul>
+            <ul>
+                <h2>Materias de Media</h2>
+                <li>Biología</li>
+                <p>Introducción a la vida y los organismos.</p>
+    
+                <li>Física</li>
+                <p>Estudio de la materia y sus propiedades.</p>
+    
+                <li>Química</li>
+                <p>Conocimiento básico de elementos y compuestos.</p>
+            </ul>
+        </div>
+    
+       
+        <div id="universidad" class="default">
+            <h2>Materias de Universidad</h2>
+            <ul>
+                <li>Precálculo</li>
+                <p>Fundamentos matemáticos avanzados.</p>
+    
+                <li>Geografía</li>
+                <p>Análisis profundo de sistemas geográficos.</p>
+    
+                <li>Inglés</li>
+                <p>Perfeccionamiento de las habilidades lingüísticas.</p>
+    
+                <li>Desarrollo de Software</li>
+                <p>Creación de aplicaciones y sistemas.</p>
+    
+                <li>Tecnología de la Información (TIC)</li>
+                <p>Gestión de sistemas informáticos y redes.</p>
+    
+                <li>Bases de Datos</li>
+                <p>Organización y almacenamiento de datos.</p>
+    
+                <li>Estructura de Datos</li>
+                <p>Estudio de la organización de la información.</p>
+    
+                <li>Ingeniería de Software</li>
+                <p>Metodologías y diseño de software a gran escala.</p>
+            </ul>
+        </div>
+    </section>
+    
+
+    <script>
+        function showSection(sectionId) {
+            // Codigo que oculta secciones, mediante clases
+            const sections = document.querySelectorAll('.default');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+
+            // Codigo que muestra secciones, que le coloca una clase a cada seccion a traves del ID
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</body>
+</html>

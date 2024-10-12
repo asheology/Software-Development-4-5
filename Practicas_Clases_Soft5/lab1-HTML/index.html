@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body, html{
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #d8b8b8;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .header {
+            width: 100%;
+            height: 100px;
+            background-color: #a18a8a;
+
+        }
+        h1{
+            padding: 10px;
+            text-align: center;
+            margin: 0;
+            
+        }
+        ul{
+            list-style: none;
+            padding: 0;
+        }
+        li{
+            padding-bottom: 12px;
+        }
+        .principal{
+            display: flex;
+            flex-direction: column;
+	        align-items: center; 
+        }
+        .principal div{
+            text-align: center;
+            margin: 10px;
+            border-radius: 10px;
+            background: #b96e6e;
+        }
+        .menu{
+            width: 300px;
+            height: 150px;
+        }
+        .resultado{
+            width: 400px;
+            height: auto;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <h1>Laboratorio 1 Software 5 <br> Omar Garcia</h1>
+        </div>
+    </header>
+    
+    <section>
+        <div class="principal">
+            <div class="menu">
+                <h2>Menu <br> Partes de la PC</h2>
+                <button></button>
+                <button id="mostrar-partes" onclick="mostrarPartesConputadora()">Mostrar Partes</button>
+            </div>
+            <div class="resultado">
+                <ul id="partes-lista"></ul>
+            </div>
+        </div>
+        
+    </section>
+
+
+    <script>
+
+    const partesComputadora = [
+        "Procesador", 
+        "Placa Base", 
+        "Memoria RAM", 
+        "Tarjeta Gráfica", 
+        "Almacenamiento", 
+        "Fuente de Poder", 
+        "Refrigeración", 
+        "Gabinete", 
+        "Monitor", 
+        "Teclado"
+    ];
+
+    const descripciones = [
+        "El dispositivo de la computadora que realiza cálculos y tareas.",
+        "La placa que conecta todos los componentes de la computadora.",
+        "Memoria utilizada para almacenar datos temporales mientras la computadora está encendida.",
+        "Módulo que maneja la salida de gráficos.",
+        "Dispositivo de almacenamiento para guardar datos a largo plazo.",
+        "Suministra energía eléctrica a todos los componentes de la computadora.",
+        "Sistema para mantener la temperatura adecuada de los componentes.",
+        "Estructura que alberga todos los componentes de la computadora.",
+        "Dispositivo de visualización para mostrar imágenes y videos.",
+        "Dispositivo de entrada utilizado para ingresar datos."
+    ];
+
+    let i = 0;
+    let n = 0;
+
+    function mostrarPartesConputadora() {
+        const lista = document.getElementById("partes-lista");
+
+        if (i < partesComputadora.length) {
+            const liTitulo = document.createElement("li");
+            liTitulo.textContent = partesComputadora[i];
+            lista.appendChild(liTitulo);
+            i++;
+
+        }
+        if (n < descripciones.length) {
+            const liDescripcion = document.createElement("li");
+
+            liDescripcion.textContent = descripciones[n];
+            lista.appendChild(liDescripcion);
+            n++; 
+        }
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: 'Courier New', Courier, monospace;
+        }
+        ul{
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lista de Frutas</h1>
+    <button id="mostrar-frutas" onclick="mostrarFrutas()">Mostrar Frutas</button>
+    <ul id="frutas-lista"></ul>
+    <script>
+
+        const frutas = ["Manzana", "Pera", "Naranja", "Tomate"];
+        let i = 0;
+
+        function mostrarFrutas(){
+            const lista = document.getElementById("frutas-lista");
+            // lista.innerHTML = "";
+
+            if(i < frutas.length){
+                const li = document.createElement("li");
+                li.textContent = frutas[i];
+                lista.appendChild(li);
+                i++;
+            }else{
+
+            }
+
+            
+
+            
+            // for(let i = 0; i < frutas.length; i++ ){
+            //     const li = document.createElement("li");
+            //     li.textContent = frutas[i];
+            //     lista.appendChild(li);
+            // }
+        }
+    </script>
+</body>
+</html>
