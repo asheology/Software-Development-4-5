@@ -1,0 +1,55 @@
+
+body {
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.formulario-div{
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+}
+.formulario-div h2 {
+    text-align: center;
+}
+.formulario-div input, .formulario-div textarea, .formulario-div select, .formulario-div button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.formulario-div .radio-group {
+    display: flex;
+  
+}
+.formulario-div .radio-group input {
+    width: auto;
+    margin-right: 5px;
+    
+}
+.formulario-div button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+img{
+    height: 200px;
+    position: absolute;
+}
+
+.img1{
+    left: 25%;
+}
+.img2{
+    right: 25%;
+}
+

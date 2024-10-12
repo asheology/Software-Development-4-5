@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Linux</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="formulario-div">
+        <h2>Formulario de Linux</h2>
+        <form action="" method="POST">
+            
+            <label for="distro">Selecciona tu distribución de Linux favorita:</label>
+            <select id="distro" name="distro">
+                <option value="ubuntu">Ubuntu</option>
+                <option value="fedora">Fedora</option>
+                <option value="debian">Debian</option>
+                <option value="arch">Arch Linux</option>
+                <option value="otra">Otra</option>
+            </select>
+
+            
+            <label for="nivel">Nivel de experiencia en Linux:</label>
+            <div class="radio-group">
+                <label><input type="radio" name="nivel" value="principiante" required> Principiante</label>
+                <label><input type="radio" name="nivel" value="intermedio"> Intermedio</label>
+                <label><input type="radio" name="nivel" value="avanzado"> Avanzado</label>
+            </div>
+
+        
+            <label for="comentarios">Haz un comentario de una ventaja de Linux:</label>
+            <textarea id="comentarios" name="comentarios" rows="4" placeholder="Escribe tus comentarios aquí..." required></textarea>
+
+           
+            <button type="submit">Enviar</button>
+        </form>
+        
+    </div>
+    <img src="linux.png" alt="" class="img1">
+        <img src="fedora.png" alt="" class="img2">
+
+</body>
+</html>
