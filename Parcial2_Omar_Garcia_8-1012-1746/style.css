@@ -1,0 +1,96 @@
+/* Estilos básicos */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    text-align: center;
+
+}
+
+h2 {
+    color: #ffa51e;
+    text-align: center;
+}
+p {
+    margin: 10px 0;
+    text-align: center;
+}
+
+header, footer {
+    background-color: #ffba82;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+ul {
+    list-style-type: square;
+}
+
+/* Estilos para el formulario */
+form {
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #ffba82;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Estilos para la tabla */
+table {
+    width: 100%;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+/* Navegación semántica */
+footer ul, header ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    justify-content: center;
+    
+}
+
+footer ul li, header ul li {
+    margin-right: 15px;
+    text-decoration: none;
+   
+    
+}
+
+section {
+    text-align: center;
+}
+
+video {
+    display: block;
+    margin: 0 auto;
+}
+li a{
+    
+    color: white;
+}
+
+button {
+    background-color: #ff8800;
+    font-size: large;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 5px;
+    border: solid 3px rgb(117, 220, 211);
+}
