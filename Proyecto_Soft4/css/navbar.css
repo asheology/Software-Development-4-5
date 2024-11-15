@@ -1,0 +1,37 @@
+/* General Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f0f0f0; /* Color superior (blanco) */
+    border-bottom: 4px solid #d53a47; /* Franja roja */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.navbar-logo img {
+    height: 70px;
+}
+
+/* Botones de la Derecha */
+.navbar-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+#pokedex-btn, #formulario-btn {
+    padding: 8px 16px;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    background-color: #d53a47; /* Color rojo de los botones */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#pokedex-btn:hover, #formulario-btn:hover {
+    background-color: #a52a2a; /* Color rojo oscuro en hover */
+}
